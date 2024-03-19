@@ -1,0 +1,15 @@
+is_authorized = True
+print(is_authorized)
+print(type(is_authorized))
+
+print("bool(10) -", bool(10))
+print("bool('abc') -", bool('abc'))
+print("bool([]) -", bool([]))
+print("bool([1, 2])", bool([1, 2]))
+print("bool(None)", bool(None))
+print("100 > 10 -", 100 > 10)
+print("'Long string' > 'Short' -", 'Long string' > 'Short')
+print("[] == [] -", [] == [])
+print("{'a': 3} == {'a': 6} -", {'a': 3} == {'a': 6})
+print("{'a': 3} == {'a': 3} -", {'a': 3} == {'a': 3})
+print("{'b': 6} == {'a': 6} -", {'b': 6} == {'a': 6})
