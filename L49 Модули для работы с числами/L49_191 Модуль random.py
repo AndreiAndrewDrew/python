@@ -12,5 +12,5 @@ print(my_list)
 random.shuffle(my_list)
 print(my_list)
 
-print(random.choices('0123456789', k=8)) # Obtinem lista din 8 elemente
-print(''.join(random.choices('ABCDEF0123456789', k=8))) # astfel obtinem str, un rind
+print(random.choices('0123456789', k=8))  # Obtinem lista din 8 elemente
+print(''.join(random.choices('ABCDEF0123456789', k=8)))  # astfel obtinem str, un rind
