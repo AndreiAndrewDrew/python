@@ -1,0 +1,8 @@
+1. Instalam docker desktop de pe docker.com
+2. Dupa docker in CMD controlam:
+docker version-- daca docker so instalt ce versie si daca so pornit server
+3. de pe resursul https://github.com/rnwood/smtp4dev ---> Installation Instructions
+           ---> copiem instructiunea 'docker run --rm -it -p 3000:80 -p 2525:25 rnwood/smtp4dev'
+4. In CMD executam: docker run --rm -it -p 3000:80 -p 2525:25 rnwood/smtp4dev
+5. intram in browser si accessam: http://localhost:3000/
+   terbuie sa se incarce: smpt4dev, web aplicatie
