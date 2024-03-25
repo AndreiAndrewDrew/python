@@ -1,0 +1,8 @@
+Alegem mediu virtual corect
+
+Anume alegem interpretatorul python acela din mapa '.venv'!!!
+Adresa interpretatului:
+D:\1.Andrew Work\3.Python\1.PhytonProjects (2023)[Udemy]\courses\.venv\Scripts\python.exe
+ita acesta alegem din mapa '.venv' - mapa creata manual de noi nu aceeea automat de pychram,
+aceea daca apare trebuie de sters
+

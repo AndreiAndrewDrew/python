@@ -1,0 +1,7 @@
+Pornim web-servrul Django cu ajutorul fisierului 'manage.py'
+
+1. in Command Prompt in mapa courses executa: courses>python manage.py runserver
+
+2. intram pe adressa http://127.0.0.1:8000/
+
+3. Avem acces si la partea admin pe adresa http://127.0.0.1:8000/admin

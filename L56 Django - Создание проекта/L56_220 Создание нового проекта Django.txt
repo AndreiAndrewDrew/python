@@ -1,0 +1,8 @@
+1. Creem nou proect django cu comanda:django-admin startproject base .
+denumirea proiectului va fi 'base', dar '.' inseamna creeare noului proeict
+in mapa curenta adica 'courses'
+
+Se creaza automat pachetul 'base' in proiect cu modulele lui,
+si la fel se creeaza fisierul 'manage.py'
+
+'manage.py' ne ajuta sa pornim serverul django
