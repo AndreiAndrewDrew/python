@@ -1,0 +1,5 @@
+1. Creem o nua aplicatie in proiectul 'courses' cu ajutorul 'manage.py'
+In Command Promp executam: python manage.py startapp shop
+'shop' - este denumirea aplicatiei
+
+
