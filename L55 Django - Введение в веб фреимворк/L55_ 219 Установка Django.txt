@@ -1,4 +1,6 @@
-Lucru in Proiectul 'courses':
+Creem proeict Nou 'courses'
+
+Mai departe va fi lucru in Proiectul 'courses':
 
 Instalam django:
 
@@ -22,13 +24,14 @@ sqlparse   0.4.4
 tzdata     2024.1
 wheel      0.42.0
 
-5. vedem copakul pachetelor cu comanda: pipenv graph
+5. Vedem copakul pachetelor cu comanda: pipenv graph
 Rezultat:
 Django==4.0.8
-??? asgiref [required: >=3.4.1,<4, installed: 3.8.1]
-??? sqlparse [required: >=0.2.2, installed: 0.4.4]
-??? tzdata [required: Any, installed: 2024.1]
+--- asgiref [required: >=3.4.1,<4, installed: 3.8.1]
+--- sqlparse [required: >=0.2.2, installed: 0.4.4]
+--- tzdata [required: Any, installed: 2024.1]
 
-
+6. La dorintsa se poate de adugat pacehtul 'autopep8' :pip install autopep8
+pachet pentru autoformatarea textului, analog (ctrl+alt+l)
 
 
