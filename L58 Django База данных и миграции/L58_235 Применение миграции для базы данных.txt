@@ -1,0 +1,4 @@
+1.Aplicam migratsiile pentru bazade de date cu comanda:
+    python manage.py migrate
+
+

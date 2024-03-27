@@ -1,0 +1,14 @@
+1. Creeem superuser cu comanda:
+python manage.py createsuperuser
+
+2 Introducem:
+Username (leave blank to use 'nastea'): andrew
+Email address: andreiandrewg@gmail.com
+Password:
+Password (again):
+Error: Your passwords didn't match.
+Password:
+Password (again):
+Superuser created successfully.
+
+Parola o creiam care vrem --> Parola pentru administrator

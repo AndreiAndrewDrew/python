@@ -1,0 +1,33 @@
+1. In Command Prompt executam:
+python manage.py shell
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from shop.models import Category, Course # importam Category si Course
+>>> Course.objects.all() # afisham toate obectele
+<QuerySet []>
+>>> Category.objects.all() # afisham toate obectele
+<QuerySet []>
+>>> new_category = Category(title='Programming') # creem o inscriptie noua, cimpul 'id' si 'created_at' se va completa automat
+>>> new_category.save() # salvam inscritsiile
+>>> Category.objects.all()  # din nou afisham toate obuiectele
+<QuerySet [<Category: Category object (1)>]>
+>>> new_category.id # accesam info cu ajutorul 'new_category'
+1
+>>> new_category.title
+'Programming'
+>>> new_category.created_at
+datetime.datetime(2024, 3, 26, 14, 3, 9, 839967, tzinfo=datetime.timezone.utc)
+>>> Category.objects.get(pk=1) # la fel accesam info din cimpul cu 'pk'='primary key'
+<Category: Category object (1)>
+>>> Category.objects.get(pk=1).id
+1
+>>> Category.objects.get(pk=1).title
+'Programming'
+>>> Category.objects.get(pk=1).created_at
+datetime.datetime(2024, 3, 26, 14, 3, 9, 839967, tzinfo=datetime.timezone.utc)
+>>> Category.objects.filter(pk=1) # la fel dar cu ajutorul filtrelui
+<QuerySet [<Category: Category object (1)>]>
+>>> Category.objects.filter(title='Programming')
+<QuerySet [<Category: Category object (1)>]>
+>>> exit() # iesim din 'shell'

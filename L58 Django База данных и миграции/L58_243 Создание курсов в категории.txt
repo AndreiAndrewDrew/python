@@ -1,0 +1,19 @@
+python manage.py shell
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from shop.models import Category, Course
+>>> category = Category.objects.get(id=1)
+>>> category.course_set.all()
+<QuerySet []>
+>>> category.course_set.create(title="Complete Python Guide", price=99.98, students_qty=100, reviews_qty=50)
+<Course: Course object (1)>
+>>> Course.objects.all()
+<QuerySet [<Course: Course object (1)>]>
+>>> category.course_set.create(title="Complete Java Guide", price=99.97, students_qty=80, reviews_qty=30)
+<Course: Course object (2)>
+>>> Course.objects.all()
+<QuerySet [<Course: Course object (1)>, <Course: Course object (2)>]>
+>>> [course.title for course in Course.objects.all()] # creem ciclu pentru a extrage 'title'
+['Complete Python Guide', 'Complete Java Guide']
+>>> quit()

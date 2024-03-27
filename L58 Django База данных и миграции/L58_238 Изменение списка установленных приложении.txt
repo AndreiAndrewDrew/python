@@ -1,0 +1,15 @@
+1. Trebuie de inregistrat aplicatia noastrra in mapa principala 'base',
+    trecem in mapa 'base'-> in 'settings.py' adugam aici:
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    # adugam drumul spre aplicatie
+    'shop.apps.ShopConfig'
+]
+

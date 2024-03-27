@@ -1,0 +1,7 @@
+1. Lucram in fisierul shop/models.py:
+
+In clasele 'Category' si 'Course' adaugam:
+
+def __str__(self):
+    return self.title
+

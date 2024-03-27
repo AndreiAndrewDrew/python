@@ -1,0 +1,8 @@
+1. Modificarea modelelor
+title = models.CharField(max_length=300)
+
+  Si din nou trebuie de creat migratiile:
+python manage.py makemigrations
+  si de aplicat migratsiile:
+python manage.py migrate
+

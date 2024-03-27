@@ -1,0 +1,9 @@
+1. Trebuie sa creem migratii pentru aplicatia noastra 'shop',
+pentru ca categorile si cursurile sa apara in baza noastra de date 'db.sqlite3'
+Deschidem terminalul (Command Prompt):
+    python manage.py makemigrations
+R:
+Migrations for 'shop':
+  shop\migrations\0001_initial.py
+    - Create model Category
+    - Create model Course
