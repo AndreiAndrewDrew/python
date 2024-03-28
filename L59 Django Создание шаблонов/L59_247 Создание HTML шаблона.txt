@@ -1,0 +1,47 @@
+1. IN mapa 'shop' creem o mapa nuoa 'templates'
+2. In 'templates' creem shaplon nou 'courses.html'
+In el inscriem:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Students Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>My Course</td>
+                <td>Programming</td>
+                <td>49.99</td>
+                <td>200</td>
+                <td><button>Buy</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+3. In 'shop/views.py':
+
+from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Course  # din mapa curenta din 'models.py' importam variabila 'Course'
+
+
+# Create your views here.
+def index(request):
+    courses = Course.objects.all()
+    return render(request, 'courses.html')
+    # return HttpResponse(courses)
+    # return HttpResponse(str(course) + '<br>' for course in courses)
+    # return HttpResponse(''.join([str(course) + '<br>' for course in courses]))

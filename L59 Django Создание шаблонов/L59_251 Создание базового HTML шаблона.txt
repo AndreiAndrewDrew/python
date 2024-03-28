@@ -1,0 +1,86 @@
+1. In maoa 'templates' creiem fisier nou 'base.html'
+2. creem cu html scheletu  u '!+apasam tab'
+3. Adaugam in <head>...</head> la 'base.html' linkul pentru bootstrap:
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+4. in 'courses.html' stergem zagalovkul si lasam numai teabelul:
+
+<table class="table mt-5 table-bordered table-striped table-hover">
+    <thead class="table-dark">
+    <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Students Quantity</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for course in courses %}
+    <tr>
+        <td>{{course.title}}</td>
+        <td>{{course.category}}</td>
+        <td>{{course.price}}</td>
+        <td>{{course.students_qty}}</td>
+        <td>
+            <button class="btn btn-primary">Buy</button>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+5.In base.html:
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        {% block content %}
+
+        {% endblock %}
+    </main>
+</body>
+</html>
+
+6.In 'courses.html' adaugam de la inceput:
+
+{% extends 'base.html' %}
+{% block content %}
+<table class="table mt-5 table-bordered table-striped table-hover">
+    <thead class="table-dark">
+    <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Students Quantity</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for course in courses %}
+    <tr>
+        <td>{{course.title}}</td>
+        <td>{{course.category}}</td>
+        <td>{{course.price}}</td>
+        <td>{{course.students_qty}}</td>
+        <td>
+            <button class="btn btn-primary">Buy</button>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+
+
