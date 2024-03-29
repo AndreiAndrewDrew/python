@@ -1,0 +1,18 @@
+1. Mutam mapa 'templates' in mapa proiectului 'courses':
+O luam si o tragem cu mousul
+
+2. ne ducem in fisierul 'base/settings.py' si gasim cimpul:
+
+'APP_DIRS': True,
+acest cimp raspunde ca 'django' sa caute mapa 'templates' in mapa proeictului,
+in cazul nostru 'shop'
+
+tot aici modifcam:
+'DIRS': [BASE_DIR / 'templates'], ii aratam drumul la templates
+
+3.Creem in mapa templates o submapa 'shop' pentru ca shaploanele aplicatiei noatre 'shop'
+sa fie aparte de alte apliacatii pe viitor
+
+4.modificam 'shop/views.py':
+
+

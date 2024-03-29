@@ -1,0 +1,9 @@
+1. In shop/urls.py adaugam:
+
+from django.urls import path
+from . import views  # '.' importam tat modulul sub numele 'views'
+
+urlpatterns = [
+    path('', views.index, name='index')
+    path('<int:course_id>', views.single_course, name='single_course')
+]
