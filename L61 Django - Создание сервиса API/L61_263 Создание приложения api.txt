@@ -1,0 +1,21 @@
+1. Crearea servisului api;
+
+De pe saitul 'pypi.org' cautam pachetul 'django-tastypie'
+
+2. intsala pachetul
+
+3. cu comanda: python manage.py startapp api
+creem applicatia 'api'
+
+4. In 'base/settings.py' :
+in lista de aplicatii:
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'shop.apps.ShopConfig',
+   ==> 'api.pps.ApiConfig'<== adaugam
+]

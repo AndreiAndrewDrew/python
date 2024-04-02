@@ -1,0 +1,27 @@
+1. deschidem fisierul 'base/settings.py':
+
+NSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'shop.apps.ShopConfig',
+    'api.apps.ApiConfig',
+    'tastypie' <-- am adugat app tastypie
+]
+
+2. Intram in panelul administratului 'username:andrew' 'password:Drewdrew.python'
+
+trebuie sa apara aplicatia 'tastypie' cu cimpul 'Api keys'
+
+Daca accesam 'Api keys' ne da eorsre deoarce nam aplicat migratsiile pentru app
+'tastypie'
+
+3. Aplicam migratsiile in Command prompt:
+python manage.py migrate
+
+4. intram in panel administratora aceseam 'Api keys'
+adugam keie, alegem userul, la cautre scriem 'andrew' apsam lupa, alegem userul
+'andrew' automat apare id..si compunem ce cheie dorim..apsam SAVE

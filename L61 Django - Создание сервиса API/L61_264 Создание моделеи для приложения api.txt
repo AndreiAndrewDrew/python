@@ -1,0 +1,21 @@
+1. lucram in fidierul 'api/models.py':
+
+from tastypie.resources import ModelResource
+from shop.models import Course, Category
+
+
+# /api/v1/courses
+# /api/v1/categories
+
+class CategoryResource(ModelResource):
+    class Meta:
+        queryset = Category.objects.all()
+        resource_name = 'categories'
+        allowed_methods = ['get']
+
+
+class CourseResource(ModelResource):
+    class Meta:
+        queryset = Course.objects.all()
+        resource_name = 'courses'
+        allowed_methods = ['get', 'post','delete']

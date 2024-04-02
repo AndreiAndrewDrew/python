@@ -1,0 +1,41 @@
+1. Creem curs nou cu ajutorul POST
+POST        127.0.0.1:8000/api/v1/courses/
+
+lasam api keie de autorizarea
+
+2.Trecem in sectia 'body'
+
+Selecteam 'raw' si 'JSON'
+adaugam parametrii necesari pentrul cursul nou:
+
+{
+    "title":"Complete C# Guide",
+    "price": 45.99,
+    "reviews_qty":38,
+    "students_qty":100,
+    "category_id":1 # aici aprae probleme la adugare necesite
+                    # configurari fisierul 'api/models.py'
+}
+
+3. Modificam fisierul 'api/models.py':
+
+In calasa 'CourseResource' adugam metoda 'hydrate'
+
+cclass CourseResource(ModelResource):
+    class Meta:
+        queryset = Course.objects.all()
+        resource_name = 'courses'
+        allowed_methods = ['get', 'post', 'delete']
+        authentication = CustomAuthentication()
+        authorization = Authorization()
+
+    def hydrate(self, bundle):
+            bundle.obj.category_id = bundle.data['category_id']
+            return bundle
+
+    def dehydrate(self, bundle):
+            bundle.data['category_id'] = bundle.obj.category
+            return bundle
+
+4. repetam punctul 2. cu metoda POST adugam ciurs nou
+Rapuns: '201 Created'

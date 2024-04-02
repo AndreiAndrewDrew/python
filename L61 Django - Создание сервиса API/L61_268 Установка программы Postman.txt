@@ -1,0 +1,19 @@
+1. Instala programa 'Postman'
+
+O descrcam de pe google
+o deschidema si pasam 'get request'
+facem zapros nou cu get
+
+127.0.0.1:8000/api/v1/courses
+
+2. facem zapros la stergere
+cu DELETE 127.0.0.1:8000/api/v1/courses/6
+
+sa stergem cursul cu id-ul 6...# ne da raspun 200 dar inscriptsia nu sa setrs
+
+3. facem zapros la stergere cu '/'
+cu DELETE 127.0.0.1:8000/api/v1/courses/6/ # numai decit punam '/' la urma
+
+primim raspun corects 401 Unauthorized- ca suntem neautorizatsi ca sa stergem acest curs
+
+

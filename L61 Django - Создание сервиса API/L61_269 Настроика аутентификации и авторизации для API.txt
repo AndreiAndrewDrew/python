@@ -1,0 +1,40 @@
+1. In mapa 'api' creem fisier nou 'authentication.py'
+si lucram in el:
+
+from tastypie.authentication import ApiKeyAuthentication
+
+
+class CustomAuthentication(ApiKeyAuthentication):
+    def is_authenticated(self, request, **kwargs):
+        if request.method == 'GET':
+            return True
+
+        return super().is_authenticated(request, **kwargs)
+
+
+2. Trecem in fisierul 'api/models.py':
+
+from tastypie.resources import ModelResource
+from shop.models import Course, Category
+from tastypie.authorization import Authorization
+from .authentication import CustomAuthentication
+
+
+# /api/v1/courses
+# /api/v1/categories
+
+class CategoryResource(ModelResource):
+    class Meta:
+        queryset = Category.objects.all()
+        resource_name = 'categories'
+        allowed_methods = ['get']
+
+
+class CourseResource(ModelResource):
+    class Meta:
+        queryset = Course.objects.all()
+        resource_name = 'courses'
+        allowed_methods = ['get', 'post','delete']
+        authentication = CustomAuthentication()
+        authorization = Authorization()
+

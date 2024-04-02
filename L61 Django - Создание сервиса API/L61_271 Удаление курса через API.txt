@@ -1,0 +1,21 @@
+1. Adaugam prin panel administratora un curs de teste ca sal stergem
+
+2. Deschidem aplicatia 'Postman'
+trimitem Get zapros pentru primirea listei cu toate cursurile care sunt
+
+127.0.0.1:8000/api/v1/courses/
+
+coursul care lam adugat are id=10
+
+3. Stergem cursul 'test course' cu ajutorul api keiei
+alegem DELETE
+in cimpul Headers
+
+alegem in cimpul KEY -- Authorization
+in cimpul VALUE -- ApiKey andrew:keyforuseerandrew1234567890
+
+apasam Send
+
+primim raspun 204 No Content- ce inseamna ca si utentificarea si autorizarea
+au avult loc cu succes si cursul 'test course' a fost shters!!!
+

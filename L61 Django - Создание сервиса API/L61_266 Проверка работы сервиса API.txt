@@ -1,0 +1,10 @@
+1. Controlam daca lucreaza api servisul:
+In browser inscriem: http://127.0.0.1:8000/api/courses/
+
+2. Instalam extensia in Googlr chrome pentru fisierele 'json':
+JSON Formater din magazinul web chrome,
+pentru afisarea citibila a informatiei
+
+3. http://127.0.0.1:8000/api/categories/
+
+primi masivul de categorii
