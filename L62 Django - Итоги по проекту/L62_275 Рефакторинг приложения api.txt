@@ -1,0 +1,45 @@
+1. Editam 'api/models.py':
+
+from tastypie.resources import ModelResource
+from shop.models import Course, Category
+from tastypie.authorization import Authorization
+from .authentication import CustomAuthentication
+
+
+# /api/v1/courses
+# /api/v1/categories
+
+class CategoryResource(ModelResource):
+    class Meta:
+        queryset = Category.objects.all()
+        resource_name = 'categories'
+        allowed_methods = ['get']
+
+
+class CourseResource(ModelResource):
+    class Meta:
+        queryset = Course.objects.all()
+        resource_name = 'courses'
+        allowed_methods = ['get', 'post', 'delete']
+    --> excludes = ['reviews_qty', 'created_at']  # aici nscriim cimpurele care se nu fie transmise clientului
+        authentication = CustomAuthentication()
+        authorization = Authorization()
+
+    def hydrate(self, bundle):
+        bundle.obj.category_id = bundle.data['category_id']
+        return bundle
+
+    def dehydrate(self, bundle):
+    --> bundle.data['category'] = bundle.obj.category <-- rind nou
+        bundle.data['category_id'] = bundle.obj.category_id
+        return bundle
+
+
+2. cu GET   127.0.0.1:8000/api/v1/courses/
+
+controlom ce se afisheaza
+
+3. In mapa 'api' creem fisierul 'urls.py'
+Si din 'base/urls.py' mutam setarile in 'api/urls.py'
+
+
