@@ -1,0 +1,5 @@
+1. Creeam proiect nou 'gameShooter' in PyCharm;
+2. Instalam 'pygame' pchetul , cu ajutorul pipenv:
+
+pipenv install pygame
+
