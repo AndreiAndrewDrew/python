@@ -1,0 +1,1 @@
+1. creem rectangle.py si mutam tot din main.py in el!
