@@ -1,0 +1,8 @@
+1. spoate in jupyter notebooka deodata de instala pachetele care ne trebuie
+de exemplu pachetul request:
+introducem intri celula comanda:
+
+!pip install requests
+
+si pachetul 'requests' se va instala global pe calculator
+

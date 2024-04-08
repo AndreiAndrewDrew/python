@@ -1,0 +1,14 @@
+1. Intram pe situl 'jupyter.org'
+2. intram in install si instalam jypyter notebook:
+
+in 'cmd' comanda: pip install notebook
+Cu comanda: jupyter notebook
+Pornim serverul jupyter notebook
+se deschide in browser jupyter notebooks
+
+3.creem pe desktop mapa 'notebooks' --> in ea mapa 'Jupyter'
+in mapa 'Jupyter' alegem 'New'--> alegem 'Python 3 (ipykernel)' si creem
+un fisier 'First Notebook.ipynb'
+
+
+

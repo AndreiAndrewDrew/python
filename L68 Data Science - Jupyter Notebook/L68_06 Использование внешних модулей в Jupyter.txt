@@ -1,0 +1,15 @@
+1. folosim 'requests'
+
+result = requests.get('https://google.com')
+result
+
+si apasam ctrl+enter
+
+2.
+result.content
+
+prmim raspun pagina html
+
+3.
+result.status_code
+200

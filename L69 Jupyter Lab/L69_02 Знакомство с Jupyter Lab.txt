@@ -1,0 +1,8 @@
+1. intram in launcher si pornim console:
+
+este ca intrepriattor ca in cmd
+
+executam cod:
+print('Andrew')
+ca sa dam la executie apsam tastele : 'Shift+Enter'
+

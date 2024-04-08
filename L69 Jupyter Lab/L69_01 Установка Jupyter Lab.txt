@@ -1,0 +1,12 @@
+1. Accessam 'https://jupyter.org/install' gasim JupyterLab
+
+cu comanda: pip install jupyterlab
+instalam paketul jupyterlab
+
+pornim JupyterLab cu comanda:
+jupyter lab
+
+2. Cu comanda: cd Desktop/notebooks
+de deplasam in mapa 'notebooks'
+si aici pornim 'jupyter lab' cu comanda: jupyter lab
+
