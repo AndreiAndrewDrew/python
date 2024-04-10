@@ -1,0 +1,6 @@
+Lucram in fisierul 'NumPy One Dimension.ipynb'
+a fost copieat in proectul 'python'
+lucrul se efectuiaza cu ajutorul jupyterLab;
+pornim serverul:
+jupyter lab
+

@@ -1,0 +1,3 @@
+In mapa : 'Desktop/notebooks/NumPy/' creem fisier nou 'NumPy Arange and Reshape.ipynb'
+si respectiv lucram in el
+dupa sfirsirea lucrului va fi copiat in proiectul 'python';

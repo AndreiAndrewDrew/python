@@ -1,0 +1,4 @@
+1. Accesam situl: 'numpy.org' la fel este accesibil si pe 'pypi.org'
+Pasam pe install, si vedem comanda de instalatsie:
+pip install numpy
+
