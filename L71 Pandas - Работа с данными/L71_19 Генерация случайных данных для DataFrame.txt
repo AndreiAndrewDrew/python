@@ -1,0 +1,10 @@
+1.In mapa : 'Desktop/notebooks/Pandas' creem 'Pandas Random CSV.ipynb'
+si respectiv lucram in el
+dupa sfirsirea lucrului va fi copiat in proiectul 'python';
+
+Cu comanda :
+df.to_csv('random_sales.csv', index=False)
+# excludem coloana index care se creeaza automat
+
+Salvam DataFrame in CSV fisier cu numele 'random_sales.csv'
+fisierul va fi copiat in mapa

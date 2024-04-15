@@ -1,0 +1,3 @@
+1.In mapa : 'Desktop/notebooks/Pandas' creem 'Pandas Merge, Drop and Extend.ipynb'
+si respectiv lucram in el
+dupa sfirsirea lucrului va fi copiat in proiectul 'python';

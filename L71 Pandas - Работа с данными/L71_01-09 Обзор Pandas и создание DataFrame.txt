@@ -1,0 +1,12 @@
+1. Accesam 'pandas.pydata.org' si vedem cum se intaleaza!
+
+La fel este diponibel pe 'pupi.org' scrim in cautare 'pandas'
+
+Se poate direct in 'jupyter lab' in orice notebook, inroducem:
+
+!pip install pandas
+
+2.In mapa : 'Desktop/notebooks/' creem mapa 'Pandas'
+In mapa : 'Desktop/notebooks/Pandas' creem 'Pandas DataFrames and Series.ipynb'
+si respectiv lucram in el
+dupa sfirsirea lucrului va fi copiat in proiectul 'python';

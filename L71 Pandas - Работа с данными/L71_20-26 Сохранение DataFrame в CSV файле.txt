@@ -1,0 +1,19 @@
+20. Cu comanda :
+df.to_csv('random_sales.csv', index=False)
+# excludem coloana index care se creeaza automat
+
+Salvam DataFrame in CSV fisier cu numele 'random_sales.csv'
+fisierul va fi copiat in mapa
+
+21. df = pd.read_csv('random_sales.csv', parse_dates=['Date'])
+Citim din CSV fisier
+
+
+22.  pentru excel trebuie sa instalm biblioteca 'openpyxl'
+Intram in 'pypi.org' in cautare scriam 'openpyxl'
+
+La inceput fiesierului 'Pandas Random CSV' inscriem comanda:
+!pip install openpyxl
+
+Dupa instalerea pachetului executam
+df.to_excel('sales_data.xlsx') # Salvam in Excel fisier
