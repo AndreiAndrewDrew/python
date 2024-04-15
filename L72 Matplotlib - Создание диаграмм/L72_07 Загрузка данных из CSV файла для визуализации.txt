@@ -1,0 +1,7 @@
+1. Accesam https://github.com/bstashchuk/python-en-files
+
+si copiem datele din fisierul 'jersey-rainfall-1984-to-2021.csv'
+in fisierul 'jersey-rainfall-1984-to-2021.txt' in jupyter lab
+
+2, creem fisier nou 'Matplotlib CSV.ipynb' in mapa 'matplotlib'
+si respectiv lucram in el

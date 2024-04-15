@@ -1,0 +1,8 @@
+Lucram tot in JupyterLab
+
+1.Accesam https://matplotlib.org/  si instalap pachetul daca nu este instalat
+
+2.In mapa : 'Desktop/notebooks/' creem maoa 'Matplotlib'
+in ea creem fisierlu 'Matplotlib Examples.ipynb'
+si respectiv lucram in el:
+
