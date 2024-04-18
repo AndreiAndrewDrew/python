@@ -1,0 +1,6 @@
+1. am exportat si am ceeat fisierul dot
+
+apoi accesam 'https://edotor.net/'
+
+copiem to din fisierul 'decision_tree_model.dot'
+si nitroducem pe sait si generam schema!!

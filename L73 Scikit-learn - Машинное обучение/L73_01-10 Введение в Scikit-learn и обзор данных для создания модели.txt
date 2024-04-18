@@ -1,0 +1,15 @@
+1. https://scikit-learn.org/stable/
+
+https://pypi.org/project/scikit-learn/
+il instalma ca deobicei in jupyter lab in fisierul 'Scikit prediction and Evaluation.ipynb':
+
+!pip install scikit-learn
+
+2.https://github.com/bstashchuk/python-en-files/blob/main/vehicles.csv
+de aici cipiem fiseirul 'vehicles.csv'
+in visierul  'vehicles.csv' in media 'jupyter lab'
+
+
+
+
+
